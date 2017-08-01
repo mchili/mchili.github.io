@@ -1,0 +1,91 @@
+/** 
+ *  Style for Social Icons for Footer
+ */ 
+.contact {
+    height: 250px;
+    background-color: $primary;
+    margin: 0px;
+}
+
+/**
+ * Includes logo & social contact div
+ */ 
+.social {
+    margin-top: 45px;
+    //text-align: center;
+    position: relative;
+}
+
+.chili-logo--white {
+    top: 40%;
+    left: 5%;
+    background: url('assets/images/logo-white.png') center/cover no-repeat;
+    width: 90px; 
+    height: 90px;
+    
+    @media screen and (max-width: $mobileMax) {
+        position: relative;
+        top: 40px;
+        left: 45%;
+        margin-bottom: 60px;
+        width: 70px;
+        height: 70px;
+    }
+
+}
+
+/** 
+ * Includes Header & Icons
+ */
+.social-contact {
+    display: block;
+    //padding-top: 60px;
+    
+    @media screen and (max-width: $mobileMax) {
+        text-align: center;
+        
+    }
+    
+    @media screen and (min-width: $phabletMin) {
+       text-align: right;
+       margin-top: 70px;
+    }
+}
+
+.social h2 {
+  color: $white;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.social-icons {
+    text-align: center;
+}
+
+.social__icon {
+    color: $secondary;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    height: 40px;
+    padding: 0 10px;
+
+    i {
+        max-height: 100%;
+        opacity: 1;
+        transition: opacity 0.1s ease-in 0s;
+    }
+
+    &:hover i {
+        opacity: .75;
+    }
+    
+    &:active i {
+        opacity: .5;
+    }
+
+    @media screen and (min-width: $tabletMin) {
+        height: 50px;
+        padding: 0 15px;
+    }
+}

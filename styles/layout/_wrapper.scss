@@ -1,0 +1,39 @@
+/* ---------------------------------------------- *\
+    Wrapper
+\* ---------------------------------------------- */
+
+.wrapper {
+    display: block;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+    @include cf();
+
+    @media screen and (min-width: $smallTabletMin) {
+        padding: 0 20px;
+    }
+}
+
+.wrapper--large {
+    max-width: 1400px;
+}
+
+.wrapper--medium {
+    max-width: 920px;
+}
+
+
+.wrapper--small {
+    max-width: 580px;
+}
+
+.wrapper--no-padding {
+    padding: 0;
+}
+
+.wrapper--padding-at-smallTablet {
+    @media screen and (min-width: $smallTabletMin) {
+        padding: 0 20px;
+    }
+}

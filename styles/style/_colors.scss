@@ -1,0 +1,33 @@
+/* -------------------------------------------------------------------------- *\
+    COLORS
+\* -------------------------------------------------------------------------- */
+$primary: #49c0b6; 
+$secondary: #828282;
+$secondary-light: #DCDCDC;
+$white: #ffffff;
+$black: #000000;
+$background-color: #EEEEEE;
+
+.primary {
+  color: $primary;   
+}
+
+.white {
+    color: $white;
+}
+
+.secondary {
+    color: $secondary;
+}
+
+.secondary-light {
+    color: $secondary-light;
+}
+
+/* project colors */
+$next-run: #002E3E;
+$lifeline: #F1F2F2;
+$chili-yoga: #b92025;
+$la-cuisine: #F4F4F4;
+$la-kitchen: #F7323F;
+$bhive: #E7EFF2;

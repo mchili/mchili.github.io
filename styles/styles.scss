@@ -1,0 +1,41 @@
+/* -------------------------------------------------------------------------- *\
+   STYLES
+\* -------------------------------------------------------------------------- */
+
+
+/**
+ * Setup
+ */
+@import "setup/mixins",
+        "setup/sizes",
+        "setup/reset",
+        "setup/normalize";
+
+
+
+/**
+ * Layout
+ */
+@import "layout/grid",
+        "layout/section",
+        "layout/wrapper";
+
+
+
+/**
+ * Style
+ */
+@import "style/colors",
+        "style/icons",
+        "style/typography";
+
+
+
+/**
+ * Components
+ */
+@import "components/top",
+        "components/projects",
+        "components/skills",
+        "components/social";
+

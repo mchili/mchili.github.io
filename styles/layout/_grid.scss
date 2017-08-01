@@ -1,0 +1,80 @@
+/* -------------------------------------------------------------------------- *\
+    GRID
+    ----
+    A mobile first grid system. Prefix the breakpoint size before the grid item
+    size.
+    (ex. class="tablet-one-half  laptop-one-third")
+\* -------------------------------------------------------------------------- */
+
+$gutter: 20px;
+
+
+
+/**
+ * 1. This is to eliminate the extra whitespace the browser adds with inline
+ *    elements.
+ */
+.grid {
+    display: block;
+    font-size: 0;  /* [1] */
+    margin-left: -$gutter;
+}
+
+.grid--small-gutter {
+    margin-left: -$gutter/2;
+
+    .grid__item { padding-left: $gutter/2; }
+}
+
+    .grid__item {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        padding-left: $gutter;
+        font-size: 16px;
+    }
+
+
+
+/**
+ * Column sizes at different breakpoints found in setup/_sizes.scss
+ */
+
+.one-tenth { width: 10%; }
+.one-sixth { width: 16.6666%; }
+.one-fourth { width: 25%; }
+.one-half { width: 50%; }
+.one-third { width: 33.3333%; }
+.one-fifth { width: 20%; }
+.two-fifths { width: 40%; }
+.three-fifths { width: 60%; }
+.three-fourths { width: 75%; }
+.size-45 { width: 45%}
+
+@each $breakpoint, $size in
+    (phablet: $phabletMin,
+    small-tablet: $smallTabletMin,
+    tablet: $tabletMin,
+    large-tablet: $largeTabletMin,
+    laptop: $laptopMin,
+    desktop: $desktopMin,
+    wide: $wideMin) {
+    @media screen and (min-width: #{$size}) {
+        .#{$breakpoint}-one-tenth { width: 10%; }
+        .#{$breakpoint}-one-sixth { width: 16.6666%; }
+        .#{$breakpoint}-one-fifth { width: 20%; }
+        .#{$breakpoint}-one-fourth { width: 25%; }
+        .#{$breakpoint}-one-third { width: 33.3333%; }
+        .#{$breakpoint}-two-fifths { width: 40%; }
+        .#{$breakpoint}-45 { width: 45%; }
+        .#{$breakpoint}-one-half { width: 50%; }
+        .#{$breakpoint}-55 { width: 55%; }
+        .#{$breakpoint}-three-fifths { width: 60%; }
+        .#{$breakpoint}-two-thirds { width: 66.6666%; }
+        .#{$breakpoint}-three-fourths { width: 75%; }
+        .#{$breakpoint}-four-fifths { width: 80%; }
+        .#{$breakpoint}-five-sixths { width: 83.3333%; }
+        .#{$breakpoint}-nine-tenths { width: 90%; }
+        .#{$breakpoint}-full { width: 100%; }
+    }
+}

@@ -1,0 +1,13 @@
+.skills {
+    padding: 25px 0;
+    max-height: 750px;
+    background-color: $background-color;
+}
+.skills__section {
+    text-align: center;
+    padding: 20px;
+    
+    @media screen and (min-width: $smallTabletMin) {
+        margin: auto 0;
+    }
+}

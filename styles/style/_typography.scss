@@ -1,0 +1,93 @@
+/* -------------------------------------------------------------------------- *\
+    TYPOGRAPHY
+    ----------
+    Base text styles for headings, paragraphs, and labels.
+\* -------------------------------------------------------------------------- */
+
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Hind', sans-serif;
+    font-weight: 450;
+    color: $secondary;
+    text-transform: uppercase;
+    letter-spacing: 3.11px;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 25px;
+
+    @media screen and (min-width: $largeTabletMin) {
+        font-size: 30px;
+    }
+
+    @media screen and (min-width: $laptopMin) {
+        font-size: 40px;
+    }
+}
+
+/** 
+ * Headings for the Sections
+ */
+h2 {
+    font-size: 25px;
+    
+    @media screen and (min-width: $largeTabletMin) {
+       font-size: 30px; 
+    }
+    
+    @media screen and (min-width: $laptopMin) {
+        font-size: 35px;
+    }
+}
+
+/** 
+ * Skills Section Headings
+ */ 
+h3 {
+    font-size: 20px;
+    
+    @media screen and (min-width: $largeTabletMin) {
+        font-size: 25px;
+    }
+    
+    @media screen and (min-width: $laptopMin) {
+        font-size: 30px;
+    }
+    
+}
+
+/**
+ * Paragraphs
+ */
+p, a {
+    font-family: 'Open Sans', sans-serif;
+    color: $secondary;
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+
+    @media screen and (min-width: $largeTabletMin) {
+        font-size: 18px;
+        line-height: 38px;
+    }
+    
+    @media screen and (min-width: $laptopMin) {
+        font-size: 20px;
+        line-height: 44px;
+    }
+}
+
+
+
+/**
+ * Labels
+ */
+label {
+
+}

@@ -1,0 +1,28 @@
+/* -------------------------------------------------------------------------- *\
+    MIXINS
+    ------
+    Helper functions to cut down on the amount of typing needed.
+\* -------------------------------------------------------------------------- */
+@mixin vendor($property, $value) {
+    @if $property == transform {
+        -webkit-#{$property}: $value;
+                #{$property}: $value;
+    } @else {
+        -webkit-#{$property}: $value;
+           -moz-#{$property}: $value;
+            -ms-#{$property}: $value;
+                #{$property}: $value;
+    }
+}
+
+/**
+ * Standard clearfix to be used when floating items.
+ */
+@mixin cf() {
+    &:after {
+        display: block;
+        content: '';
+        height: 0px;
+        clear: both;
+    }
+}

@@ -1,0 +1,67 @@
+/* -------------------------------------------------------------------------- *\
+    SIZES
+    -----
+    Some standard breakpoint sizes that can vary from project to project.
+    Use min for min-width breakpoints and max for max-width breakpoints.
+\* -------------------------------------------------------------------------- */
+
+
+
+/**
+ * Header
+ */
+$headerHeight: 50px;
+$headerHeightTablet: 110px;
+
+/**
+ * Mobile
+ */
+$mobileMin: 320px;
+$mobileMax: 479px;
+
+
+/**
+ * Phablet
+ */
+$phabletMin: 480px;
+$phabletMax: 599px;
+
+
+/**
+ * Small Tablet
+ */
+$smallTabletMin: 600px;
+$smallTabletMax: 719px;
+
+
+/**
+ * Tablet
+ */
+$tabletMin: 720px;
+$tabletMax: 839px;
+
+/**
+ * Large Tablet
+ */
+$largeTabletMin: 840px;
+$largeTabletMax: 1023px;
+
+
+/**
+ * Laptop
+ */
+$laptopMin: 1024px;
+$laptopMax: 1159px;
+
+
+/**
+ * Desktop
+ */
+$desktopMin: 1160px;
+$desktopMax: 1339px;
+
+
+/**
+ * Widescreen
+ */
+$wideMin: 1340px;
