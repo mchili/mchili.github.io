@@ -8,7 +8,13 @@
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Hind', sans-serif;
     font-weight: 450;
     color: $secondary;
@@ -18,14 +24,11 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
 }
-
 h1 {
     font-size: 25px;
-
     @media screen and (min-width: $largeTabletMin) {
         font-size: 30px;
     }
-
     @media screen and (min-width: $laptopMin) {
         font-size: 40px;
     }
@@ -34,13 +37,12 @@ h1 {
 /** 
  * Headings for the Sections
  */
+
 h2 {
     font-size: 25px;
-    
     @media screen and (min-width: $largeTabletMin) {
-       font-size: 30px; 
+        font-size: 30px;
     }
-    
     @media screen and (min-width: $laptopMin) {
         font-size: 35px;
     }
@@ -48,46 +50,45 @@ h2 {
 
 /** 
  * Skills Section Headings
- */ 
+ */
+
 h3 {
     font-size: 20px;
-    
     @media screen and (min-width: $largeTabletMin) {
         font-size: 25px;
     }
-    
     @media screen and (min-width: $laptopMin) {
         font-size: 30px;
     }
-    
 }
 
 /**
  * Paragraphs
  */
-p, a {
+
+p,
+a {
     font-family: 'Open Sans', sans-serif;
     color: $secondary;
     display: block;
     font-size: 16px;
     line-height: 30px;
-
     @media screen and (min-width: $largeTabletMin) {
         font-size: 18px;
         line-height: 38px;
     }
-    
     @media screen and (min-width: $laptopMin) {
         font-size: 20px;
         line-height: 44px;
     }
 }
 
-
-
 /**
- * Labels
+ * Resume Link - in Intro Text
  */
-label {
 
+.resume-link {
+    color: $primary;
+    display: inline-block;
+    text-decoration: none;
 }
