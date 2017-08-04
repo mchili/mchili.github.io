@@ -25,12 +25,13 @@
     height: 60px;
     top: 15px;
     left: 15px;
-    background: url('assets/images/logo.png') center/cover no-repeat;
+    background: url('assets/images/logo-white.png') center/cover no-repeat;
     @media screen and (min-width: $smallTabletMin) {
         width: 90px;
         height: 90px;
         top: 25px;
         left: 25px;
+        background: url('assets/images/logo.png') center/cover no-repeat;
     }
     @media screen and (min-width: $laptopMin) {
         top: 30px;
