@@ -1,2 +1,2 @@
 # mchili.github.io
-Personal Portfolio 
+Maddie Chili | Front End Web Developer | Personal Portfolio 
