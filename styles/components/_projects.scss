@@ -1,7 +1,7 @@
 /**
  * Overall Section of Projects
  */
-.projects { 
+.projects {
     max-width: 350px;
     margin: auto;
 
@@ -15,7 +15,7 @@
     }
 }
 
-/** 
+/**
  * Individual Project Boxes
  */
 .project {
@@ -23,21 +23,30 @@
     position: relative;
     padding-bottom: 80%;
     margin-bottom: 20px;
-    
+
     &:hover {
         .project__overlay {
             background-color: rgba(73, 192, 182, 0.8);
         }
-        
+
         .project__text {
             opacity: 1;
         }
     }
 }
 
-/** 
+/**
  * Colors for the Sites
  */
+ .project--mediatrust {
+   background-color: $mediatrust;
+ }
+.project--ross {
+  background-color: $ross;
+}
+.project--wdcep {
+   background-color: $wdcep;
+}
 .project--next-run {
    background-color: $next-run;
 }
@@ -51,11 +60,11 @@
 }
 
 .project--la-cuisine {
-   background-color: $la-cuisine; 
+   background-color: $la-cuisine;
 }
 
 .project--la-kitchen {
-    background-color: $la-kitchen; 
+    background-color: $la-kitchen;
 }
 
 .project--bhive {

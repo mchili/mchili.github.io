@@ -1,6 +1,6 @@
-/** 
+/**
  *  Style for Social Icons for Footer
- */ 
+ */
 .contact {
     height: 250px;
     background-color: $primary;
@@ -9,7 +9,7 @@
 
 /**
  * Includes logo & social contact div
- */ 
+ */
 .social {
     margin-top: 45px;
     //text-align: center;
@@ -20,9 +20,9 @@
     top: 45%;
     left: 5%;
     background: url('assets/images/logo-white.png') center/cover no-repeat;
-    width: 90px; 
+    width: 90px;
     height: 90px;
-    
+
     @media screen and (max-width: $mobileMax) {
         position: relative;
         top: 70px;
@@ -35,17 +35,17 @@
 
 }
 
-/** 
+/**
  * Includes Header & Icons
  */
 .social-contact {
     display: block;
     //padding-top: 60px;
-    
+
     @media screen and (max-width: $mobileMax) {
-        text-align: center;  
+        text-align: center;
     }
-    
+
     @media screen and (min-width: $phabletMin) {
        text-align: right;
        margin-top: 70px;
@@ -63,7 +63,7 @@
 }
 
 .social__icon {
-    color: $secondary;
+    color: $white;
     display: inline-block;
     vertical-align: middle;
     text-align: center;
@@ -79,7 +79,7 @@
     &:hover i {
         opacity: .75;
     }
-    
+
     &:active i {
         opacity: .5;
     }

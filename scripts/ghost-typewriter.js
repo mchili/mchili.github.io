@@ -1,7 +1,7 @@
-/** typeIt - JQuery Animated Typing Plugin **/ 
+/** typeIt - JQuery Animated Typing Plugin **/
 $(document).ready(function(){
 $('#ghost').typeIt({
-     strings: ["websites", "style guides", "wireframes", "logos"],
+     strings: ["websites", "email templates", "website manuals", "style guides", "wireframes", "logos"],
      speed: 250,
      breakLines: false,
      autoStart: false,
@@ -10,5 +10,3 @@ $('#ghost').typeIt({
      deleteDelay: 4500,
 });
 });
-
-
